@@ -44,11 +44,11 @@ function init() {
             const utterThis = new SpeechSynthesisUtterance(inputTxt.value);
             // changes image to open when we speak
             utterThis.onstart = function (event) {
-                currImg.src = "../assets/images/smiling-open.png";
+                currImg.src = "./assets/images/smiling-open.png";
             }
             // changes images when we end
             utterThis.onend = function (event) {
-                currImg.src = "../assets/images/smiling.png";
+                currImg.src = "./assets/images/smiling.png";
             };
             // we get the option we selected
             const selectedOption = voiceSelect.selectedOptions[0].getAttribute("data-name");
