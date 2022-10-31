@@ -5,14 +5,15 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
   
   // array of image paths
-  let images = [
+  const images = [
     "../assets/images/air-horn.svg", "../assets/images/car-horn.svg", "../assets/images/party-horn.svg", 
   ];
-  let audio = [
+  // array of audio paths
+  const audio = [
     "../assets/audio/air-horn.mp3", "../assets/audio/car-horn.mp3","../assets/audio/party-horn.mp3"
   ];
-
-  let volumeImages = [
+  // array of volume images
+  const volumeImages = [
     "../assets/icons/volume-level-0.svg", "../assets/icons/volume-level-1.svg", "../assets/icons/volume-level-2.svg", "../assets/icons/volume-level-3.svg"
   ]
   const jsConfetti = new JSConfetti();
